@@ -43,7 +43,7 @@ function createAndSendEmail(name, email, ticketFile) {
     }
 
     var data = {
-        from: 'IFG UBC <no-reply@napontaratan.com>',
+        from: 'IFG UBC <no-reply@' + MAILGUN_DOMAIN + '>',
         to: email,
         subject: 'Your ticket for the Singing Christmas Tree Concert with IFG',
         text: 'Hello ' + name + ' !\n\nGood news! Here is your ticket for the Singing Christmas Tree Concert for the Dec 2 - 7:30PM performance. Please bring this ticket with you on the day of the event. IFG will be leaving together on the day of the event - keep an eye on our Facebook event page for more details closer to the date!\n\nIt is still not too late to sign up for a ticket! However, the deadline is fast approaching. If you know a friend who want  to join us for the concert, please remind them to register soon!\n\nIf you have any questions please post your question on the Facebook event page!\n\nLINK: https://www.facebook.com/events/1772492879667654/\n\nThanks!\nYour friends at IFG',
